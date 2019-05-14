@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @import url("../fonts/Dia-Black/styles.css");
+@import url("../fonts/Dia-Bold/styles.css");
+@import url("../fonts/Dia-Regular/styles.css"); */
+
+
+@font-face {
+    font-family: 'Dia-Black';
+    src: url('../fonts/Dia-Black/Dia-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/Dia-Black/Dia-Black.otf')  format('opentype'),
+           url('../fonts/Dia-Black/Dia-Black.woff') format('woff'), url('../fonts/Dia-Black/Dia-Black.ttf')  format('truetype'), url('../fonts/Dia-Black/Dia-Black.svg#Dia-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Dia-Bold';
+    src: url('../fonts/Dia-Bold/Dia-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Dia-Bold/Dia-Bold.otf')  format('opentype'),
+           url('../fonts/Dia-Bold/Dia-Bold.woff') format('woff'), url('../fonts/Dia-Bold/Dia-Bold.ttf')  format('truetype'), url('../fonts/Dia-Bold/Dia-Bold.svg#Dia-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+@font-face {
+    font-family: 'Dia-Regular';
+    src: url('../fonts/Dia-Regular/Dia-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Dia-Regular/Dia-Regular.otf')  format('opentype'),
+           url('../fonts/Dia-Regular/Dia-Regular.woff') format('woff'), url('../fonts/Dia-Regular/Dia-Regular.ttf')  format('truetype'), url('../fonts/Dia-Regular/Dia-Regular.svg#Dia-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  *, *:before, *:after {
+    box-sizing: border-box; }
+
+.mt25{
+    margin-top: 25px;
+}  
+body{
+    background: #fff6e0;
+}
+.container{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 60px 27px;
+}
+
+.branding .logo:before{
+    content: url("../images/icon-cup.svg");
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.branding .logo{
+    font-family: 'Dia-Black';
+    font-weight: bold;
+    font-size: 20px; 
+    vertical-align: middle;
+    letter-spacing: -1.3px;
+    color: #101727;    
+}
+.branding .logo .highlight{
+    color: #ff8d26;
+}
+
+.branding .title{
+    font-family: 'Dia-Bold';
+    font-size: 35px;
+    line-height: 0.89;
+    color: #101727;
+    max-width: 274px;
+    margin: 10px 0px;
+}
+.branding .sub-heading{
+    font-family: 'Dia-Regular';
+    font-size: 15px;
+    line-height: 1.4;
+    color: #101727;
+}
+
+.goals-container{
+    margin: 25px 0px;
+    padding: 31px 41px 29px 36px;
+    min-height: 402px;
+    background: url("../images/goals-bg.png") no-repeat top left;
+}
+
+.goals-container .title-gt-st{
+    font-family: 'Dia-Regular';
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    color: #101727;
+}
+
+.goals-container .goal-heading{
+    font-family: 'Dia-Bold';
+    font-size: 22px;
+    color: #101727;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.goals-container .goal-btn{
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    min-height: 76px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family: 'Dia-Regular';
+    font-size: 22px;
+    text-align: left;  
+}
+
+.goals-container .goal-btn.goal-dinner{
+    background: #008a81;
+}
+
+.goals-container .goal-btn.goal-cook{
+    background: #ff5838;
+}
+
+.goals-container .goal-btn.goal-healthy{
+    background: #764bc4;
+}
+
+.goals-container .goal-btn .goal-btn-icon{
+    margin-right: 14px;
+}
+
+.features .feature{
+    margin-top: 33px;
+}
+.features .feature .feature-icon{
+    display: block;
+}
+.features .feature .feature-title{
+    margin: 7px 0px;
+    font-family: 'Dia-Bold';
+    font-size: 22px;
+    color: #101727;    
+}
+.features .feature .feature-desc{
+    font-family: 'Dia-Regular';
+    font-size: 15px;
+    color: #101727;
+    line-height: 1.13;  
+}
