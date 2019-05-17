@@ -171,6 +171,7 @@ body{
     font-family: 'Dia-Regular';
     font-size: 22px;
     text-align: left;  
+    text-decoration: none;
 }
 
 .goals-container .goal-btn.goal-dinner{
